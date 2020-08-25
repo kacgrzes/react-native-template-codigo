@@ -1,9 +1,12 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
+import { ExampleScreenProps } from '../types';
 
-const ExampleScreen = () => {
+const ExampleScreen = (props: ExampleScreenProps) => {
   return <View>
-    <Text>Hello</Text>
+    <Pressable onPress={() => props.navigation.goBack()}>
+      <Text>Hello from {props.route.params.param1}</Text>
+    </Pressable>
   </View>
 }
 
