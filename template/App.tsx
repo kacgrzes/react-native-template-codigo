@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import NewAppScreen from './src/screens/NewAppScreen';
+import ExampleStack from './src/navigators/ExampleStack';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <NewAppScreen />
+      <ExampleStack />
     </NavigationContainer>
   )
 }
