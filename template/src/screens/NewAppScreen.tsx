@@ -26,22 +26,25 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import { NewAppScreenProps } from '../types';
+import { NewAppScreenProps } from 'types';
 
-declare const global: {HermesInternal: null | {}};
+declare const global: { HermesInternal: null | {} };
 
-const NewAppScreen = (props: NewAppScreenProps) => {
+export const NewAppScreen = (props: NewAppScreenProps) => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
+          style={styles.scrollView}
+        >
           <Pressable
-            onPress={() => props.navigation.navigate('Example', {
-              param1: 'NewApp'
-            })}
+            onPress={() =>
+              props.navigation.navigate('Example', {
+                param1: 'NewApp',
+              })
+            }
           >
             <Header />
           </Pressable>
@@ -122,5 +125,3 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 });
-
-export default NewAppScreen;
