@@ -15,6 +15,15 @@ Install _fastlane_ using
 or alternatively using `brew install fastlane`
 
 # Available Actions
+## Android
+### android custom_lane
+```
+fastlane android custom_lane
+```
+Description of what the lane does
+
+----
+
 ## iOS
 ### ios custom_lane
 ```
