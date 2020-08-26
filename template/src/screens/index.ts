@@ -1,2 +1,2 @@
-export { ExampleScreen } from './ExampleScreen';
-export { NewAppScreen } from './NewAppScreen';
+export { ExampleScreen } from './ExampleScreen'
+export { NewAppScreen } from './NewAppScreen'

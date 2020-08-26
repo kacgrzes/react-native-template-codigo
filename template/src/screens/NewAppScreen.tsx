@@ -5,10 +5,9 @@
  * Generated with the TypeScript template
  * https://github.com/react-native-community/react-native-template-typescript
  *
- * @format
  */
 
-import React from 'react';
+import React from 'react'
 import {
   SafeAreaView,
   StyleSheet,
@@ -17,7 +16,7 @@ import {
   Text,
   StatusBar,
   Pressable,
-} from 'react-native';
+} from 'react-native'
 
 import {
   Header,
@@ -25,10 +24,10 @@ import {
   Colors,
   DebugInstructions,
   ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import { NewAppScreenProps } from 'types';
+} from 'react-native/Libraries/NewAppScreen'
+import { NewAppScreenProps } from 'types'
 
-declare const global: { HermesInternal: null | {} };
+declare const global: { HermesInternal: null | {} }
 
 export const NewAppScreen = (props: NewAppScreenProps) => {
   return (
@@ -37,15 +36,13 @@ export const NewAppScreen = (props: NewAppScreenProps) => {
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}
-        >
+          style={styles.scrollView}>
           <Pressable
             onPress={() =>
               props.navigation.navigate('Example', {
                 param1: 'NewApp',
               })
-            }
-          >
+            }>
             <Header />
           </Pressable>
           {global.HermesInternal == null ? null : (
@@ -84,8 +81,8 @@ export const NewAppScreen = (props: NewAppScreenProps) => {
         </ScrollView>
       </SafeAreaView>
     </>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   scrollView: {
@@ -124,4 +121,4 @@ const styles = StyleSheet.create({
     paddingRight: 12,
     textAlign: 'right',
   },
-});
+})

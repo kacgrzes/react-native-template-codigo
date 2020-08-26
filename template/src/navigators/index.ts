@@ -1,1 +1,1 @@
-export { ExampleStack } from './ExampleStack';
+export { ExampleStack } from './ExampleStack'
