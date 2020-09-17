@@ -10,7 +10,9 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "pods": "npx pod-install",
-    "postinstall": "yarn pods"
+    "postinstall": "yarn pods",
+    "tools:rename": "npx react-native-rename",
+    "tools:set-icon": "react-native set-icon"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
@@ -27,6 +29,7 @@
   "devDependencies": {
     "@babel/core": "^7.11.5",
     "@babel/runtime": "^7.8.4",
+    "@bam.tech/react-native-make": "^3.0.0",
     "@react-native-community/eslint-config": "^2.0.0",
     "@testing-library/jest-native": "^3.3.0",
     "@testing-library/react-native": "^7.0.2",
