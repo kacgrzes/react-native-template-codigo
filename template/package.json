@@ -4,15 +4,18 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
     "ios:11": "react-native run-ios --simulator \"iPhone 11 Pro\"",
-    "start": "react-native start",
-    "test": "jest",
+    "ios": "react-native run-ios",
+    "jest": "jest --forceExit",
+    "jest:watch": "jest --forceExit --detectOpenHandles --watch",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "pods": "npx pod-install",
     "postinstall": "yarn pods",
+    "start": "react-native start",
+    "test": "yarn typecheck && yarn lint && yarn jest",
     "tools:rename": "npx react-native-rename",
-    "tools:set-icon": "react-native set-icon"
+    "tools:set-icon": "react-native set-icon",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.12.0",
