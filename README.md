@@ -36,6 +36,19 @@ npx react-native init MyApp --template react-native-template-typescript
 
 You can go to [Android Assets Studio](https://romannurik.github.io/AndroidAssetStudio/index.html) to get more important assets
 
+## Improve or check:
+
+- package.json
+- metro
+- react-native.config.js
+- feature flags
+- error handling
+- patches
+- assets
+- relative paths - jak to maja rozwiazane
+- https://github.com/mikehardy/jetifier
+- storybook
+
 ## TODO:
 
 - make adjustments to app icon generation
